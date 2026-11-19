@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hanoman Riot — Lepas Rasa</title>
+<meta name="description" content="Pop punk dan emo dari Bandung. EP Lepas Rasa, empat lagu. Radio diputar di halaman.">
+<link rel="canonical" href="https://hanomanriot.my.id/">
+<meta name="theme-color" content="#141210">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Hanoman Riot">
+<meta property="og:title" content="Hanoman Riot — Lepas Rasa">
+<meta property="og:description" content="Empat lagu tentang arah yang hilang dan alasan untuk bertahan. Radio diputar di halaman.">
+<meta property="og:url" content="https://hanomanriot.my.id/">
+<meta property="og:image" content="https://hanomanriot.my.id/img/cover-1600.webp">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="1600">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="./img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="./fonts/anton.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="./img/cover-800.webp" as="image" fetchpriority="high">
+<link rel="stylesheet" href="./css/landing.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Lompat ke isi</a>
+
+<header class="bar">
+  <a class="brand" href="#hero" data-go="hero">HANOMAN RIOT</a>
+  <nav class="nav" aria-label="Tampilan">
+    <a href="#hero" data-go="hero">Beranda</a>
+    <a href="#radio-a" data-go="radio">Radio</a>
+    <a href="#rilis" data-go="rilis">Rilis</a>
+  </nav>
+  <button class="gerak" type="button" data-motion-toggle aria-pressed="true">
+    <span class="gerak__dot" aria-hidden="true"></span><span data-motion-label>Gerak penuh</span>
+  </button>
+</header>
+
+<main id="main">
+
+  <!-- ================= HERO ================= -->
+  <section class="view is-active" id="view-hero" data-view="hero" aria-labelledby="h-hero">
+    <div class="hero" id="hero">
+      <div class="hero__glow" data-depth="14" data-arah="lawan" aria-hidden="true"></div>
+
+      <div class="hero__copy">
+        <p class="eyebrow reveal" style="--i:0"><span class="tick" aria-hidden="true"></span>EP LEPAS RASA · 26 AGUSTUS 2026 · EMPAT LAGU</p>
+        <h1 class="display" id="h-hero" tabindex="-1">
+          <span class="line"><span>Api yang mereka nyalakan,</span></span>
+          <span class="line"><span>kita yang pakai.</span></span>
+        </h1>
+        <p class="serif reveal" style="--i:2">Empat lagu tentang arah yang hilang, beban yang tidak semua harus dibawa, dan alasan untuk bertahan.</p>
+        <div class="cta reveal" style="--i:3">
+          <button class="btn" type="button" data-play-first>
+            <span class="btn__label">Putar radio</span>
+          </button>
+          <span class="cta__note">Bunyi langsung di halaman</span>
+        </div>
+        <p class="platforms reveal" style="--i:4">
+          <a href="https://open.spotify.com/album/154oiEAurMdZXaBAG1CQLH" target="_blank" rel="noopener">Spotify</a>
+          <a href="https://music.apple.com/album/6800331038" target="_blank" rel="noopener">Apple Music</a>
+          <a href="https://music.youtube.com/watch?v=fWfmqiBeqbs" target="_blank" rel="noopener">YouTube Music</a>
+        </p>
+      </div>
+
+      <div class="hero__art" data-depth="24" data-arah="ikut">
+        <figure class="cover">
+          <img src="./img/cover-800.webp" srcset="./img/cover-800.webp 800w, ./img/cover-1600.webp 1600w"
+               sizes="(max-width:900px) 260px, 380px" alt="Sampul EP Lepas Rasa" width="380" height="380" fetchpriority="high">
+        </figure>
+        <p class="credit">Artwork Bradley Green · lisensi Artgrab</p>
+      </div>
+
+      <ol class="tracks reveal" style="--i:5" aria-label="Empat trek">
+        <li><span class="num">01</span><span class="tname">Tersesat</span><span class="tdur">3:14</span></li>
+        <li><span class="num">02</span><span class="tname">Tentang Gurindam</span><span class="tdur">2:26</span></li>
+        <li><span class="num">03</span><span class="tname">Relung</span><span class="tdur">4:08</span></li>
+        <li><span class="num">04</span><span class="tname">Pelik Dan Pelikan</span><span class="tdur">3:16</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ================= RADIO ================= -->
+  <section class="view" id="view-radio" data-view="radio" aria-labelledby="h-radio" hidden>
+    <div class="radio">
+      <div class="radio__head">
+        <div>
+          <p class="eyebrow"><span class="tick" aria-hidden="true"></span>RADIO · PUTAR DI HALAMAN</p>
+          <h2 class="display display--sm" id="h-radio" tabindex="-1">Geser objek. Tekan tombol daya.</h2>
+        </div>
+        <div class="ab" role="group" aria-label="Bentuk objek radio">
+          <button class="ab__btn is-on" type="button" data-radio="a" aria-pressed="true">A · Radio</button>
+          <button class="ab__btn" type="button" data-radio="b" aria-pressed="false">B · Pemutar piringan</button>
+        </div>
+      </div>
+
+      <div class="radio__body">
+        <div class="stage" id="stage">
+          <!-- OPSI A · kotak radio -->
+          <div class="obj obj--radio" id="obj-a" data-obj="radio" data-body="a">
+            <div class="face face--front">
+              <div class="grille">
+                <span class="disc" aria-hidden="true"><img src="./img/cover-800.webp" alt=""></span>
+              </div>
+              <div class="ctrl">
+                <p class="ctrl__label">SEKARANG</p>
+                <p class="ctrl__track" data-now>Tersesat</p>
+                <p class="ctrl__time" data-clock>00:00 / 3:14</p>
+                <div class="pbar"><i data-progress></i></div>
+                <div class="transport">
+                  <button class="tbtn" type="button" data-prev aria-label="Lagu sebelumnya">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h2v14H6zM20 5v14l-10-7z"/></svg>
+                  </button>
+                  <button class="power" type="button" data-play aria-label="Putar" aria-pressed="false">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v9" stroke-width="2.4" fill="none" stroke="currentColor" stroke-linecap="round"/><path d="M6.6 6.2a8 8 0 1 0 10.8 0" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+                  </button>
+                  <button class="tbtn" type="button" data-next aria-label="Lagu berikutnya">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 5h-2v14h2zM4 5v14l10-7z"/></svg>
+                  </button>
+                </div>
+                <div class="dial"><span class="dial__needle" data-needle></span></div>
+                <div class="knob" role="slider" tabindex="0" aria-label="Volume" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80" data-vol>
+                  <i aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="brandrow"><span>HANOMAN RIOT</span><span>LEPAS RASA · 2026</span></div>
+            </div>
+            <div class="face face--top">
+              <span class="antenna" aria-hidden="true"></span>
+              <span class="top__text">FM 104.2 · BANDUNG</span>
+            </div>
+            <div class="face face--right"></div>
+          </div>
+
+          <!-- OPSI B · pemutar piringan -->
+          <div class="obj obj--deck" id="obj-b" data-obj="deck" data-body="b" hidden>
+            <div class="face face--front">
+              <div class="deckplate">
+                <span class="deckplate__brand">HANOMAN RIOT</span>
+                <span class="deckplate__model">LR-2026</span>
+                <button class="power power--deck" type="button" data-play aria-label="Putar" aria-pressed="false">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v9" stroke-width="2.4" fill="none" stroke="currentColor" stroke-linecap="round"/><path d="M6.6 6.2a8 8 0 1 0 10.8 0" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+                </button>
+                <div class="deckplate__led" aria-hidden="true"></div>
+              </div>
+            </div>
+            <div class="face face--top">
+              <div class="platter">
+                <div class="vinyl">
+                  <span class="vinyl__label"><img src="./img/cover-800.webp" alt=""></span>
+                </div>
+              </div>
+              <div class="tonearm" aria-hidden="true"><span class="tonearm__arm"></span><span class="tonearm__head"></span></div>
+              <div class="pitch" aria-hidden="true"><span></span></div>
+              <span class="decktop__name" aria-hidden="true">LEPAS RASA</span>
+            </div>
+            <div class="face face--right"></div>
+          </div>
+
+          <p class="stage__hint" id="stage-hint">Tarik untuk memutar objek · klik tombol daya untuk bunyi</p>
+        </div>
+
+        <div class="panel">
+          <p class="panel__label">SEDANG DIPUTAR</p>
+          <p class="panel__track" data-now aria-live="polite">Tersesat</p>
+          <p class="panel__meta"><span data-clock>00:00 / 3:14</span><span data-state>Berhenti</span></p>
+          <div class="pbar pbar--wide"><i data-progress></i></div>
+          <canvas class="wave" data-wave width="640" height="72" aria-hidden="true"></canvas>
+          <div class="row">
+            <button class="btn" type="button" data-play data-play--alt>
+              <span class="btn__label">Putar</span>
+            </button>
+            <button class="linkbtn" type="button" data-next>Lagu berikutnya</button>
+          </div>
+          <p class="fine" data-status>Pemutar Spotify dimuat saat tombol ditekan.</p>
+        </div>
+      </div>
+
+      <ol class="queue" aria-label="Daftar lagu">
+        <li><button type="button" data-track="0"><span class="num">01</span><span class="tname">Tersesat</span><span class="tdur">3:14</span></button></li>
+        <li><button type="button" data-track="1"><span class="num">02</span><span class="tname">Tentang Gurindam</span><span class="tdur">2:26</span></button></li>
+        <li><button type="button" data-track="2"><span class="num">03</span><span class="tname">Relung</span><span class="tdur">4:08</span></button></li>
+        <li><button type="button" data-track="3"><span class="num">04</span><span class="tname">Pelik Dan Pelikan</span><span class="tdur">3:16</span></button></li>
+      </ol>
+
+      <div class="dock">
+        <p class="dock__head"><span>PEMUTAR RESMI · SPOTIFY</span><span data-dock-state>Belum dimuat</span></p>
+        <div id="spotify-embed" class="dock__embed" data-empty="true"></div>
+        <p class="fine">Pratinjau pendek tanpa akun. Lagu penuh butuh masuk ke Spotify di peramban ini.</p>
+        <p class="platforms platforms--dock">
+          <a href="https://open.spotify.com/album/154oiEAurMdZXaBAG1CQLH" target="_blank" rel="noopener">Spotify</a>
+          <a href="https://music.apple.com/album/6800331038" target="_blank" rel="noopener">Apple Music</a>
+          <a href="https://music.youtube.com/watch?v=fWfmqiBeqbs" target="_blank" rel="noopener">YouTube Music</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= RILIS ================= -->
+  <section class="view" id="view-rilis" data-view="rilis" aria-labelledby="h-rilis" hidden>
+    <div class="rilis">
+      <div class="rilis__head">
+        <p class="eyebrow reveal" style="--i:0"><span class="tick" aria-hidden="true"></span>RILIS</p>
+        <h2 class="display display--sm reveal" id="h-rilis" tabindex="-1" style="--i:1">Lepas Rasa, empat lagu.</h2>
+        <p class="rilis__date reveal" style="--i:2">Rilis 26 Agustus 2026 · total 13:04</p>
+      </div>
+
+      <ol class="list">
+        <li class="reveal" style="--i:2"><span class="num">01</span><div><h3 class="list__t">Tersesat</h3><p class="list__n">Ditulis 2011–2012 di Batam</p></div><span class="tdur">3:14</span></li>
+        <li class="reveal" style="--i:3"><span class="num">02</span><div><h3 class="list__t">Tentang Gurindam</h3><p class="list__n">Nasihat lama, dibaca hari ini</p></div><span class="tdur">2:26</span></li>
+        <li class="reveal" style="--i:4"><span class="num">03</span><div><h3 class="list__t">Relung</h3><p class="list__n">Isi kepala yang jadi beban</p></div><span class="tdur">4:08</span></li>
+        <li class="reveal" style="--i:5"><span class="num">04</span><div><h3 class="list__t">Pelik Dan Pelikan</h3><p class="list__n">Alasan untuk bertahan</p></div><span class="tdur">3:16</span></li>
+      </ol>
+
+      <div class="paper reveal" style="--i:5">
+        <div>
+          <p class="paper__strong">Artwork Bradley Green · lisensi resmi Artgrab</p>
+          <p class="paper__line">Produksi, mixing, mastering, drum Muhammad Irfan Hafiz</p>
+          <p class="paper__links">
+            <a href="https://open.spotify.com/album/154oiEAurMdZXaBAG1CQLH" target="_blank" rel="noopener">Spotify</a>
+            <a href="https://music.apple.com/album/6800331038" target="_blank" rel="noopener">Apple Music</a>
+            <a href="https://music.youtube.com/watch?v=fWfmqiBeqbs" target="_blank" rel="noopener">YouTube Music</a>
+          </p>
+        </div>
+        <p class="paper__note">Formasi belum lengkap.<br>Drummer, gitaris, bassis — Bandung.<br><a href="https://instagram.com/hanomanriot" target="_blank" rel="noopener">DM Instagram</a></p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script src="./js/landing.js" defer></script>
+</body>
+</html>
